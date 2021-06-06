@@ -16,9 +16,9 @@ def pressKey(i):
 
 def start():
     i=0
-    while i<10:
+    while True:
         pressKey(i)
-        i=i+1
-        time.sleep(5)
+        i=(i+1)%30
+        time.sleep(15)
 
 start()
